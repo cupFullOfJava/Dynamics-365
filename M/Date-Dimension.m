@@ -19,3 +19,10 @@ let
     #"Change Column Types to Int" = Table.TransformColumnTypes(#"Inserted Day Name",{{"Year", Int64.Type}, {"Month", Int64.Type}, {"Quarter", Int64.Type}, {"Week of Year", Int64.Type}, {"Week of Month", Int64.Type}, {"Day", Int64.Type}, {"Day of Week", Int64.Type}, {"Day of Year", Int64.Type}})
 in
     #"Change Column Types to Int"
+
+
+
+/*
+Implemented from RADACAD.
+http://radacad.com/create-a-date-dimension-in-power-bi-in-4-steps-step-1-calendar-columns
+*/
