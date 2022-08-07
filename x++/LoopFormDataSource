@@ -1,0 +1,7 @@
+FormDataSource lFDS = this.args().callerFormControl().formRun().dataSource(tableStr(SalesTable));
+
+SalesTable lSalesTable;
+for(lSalesTable = lFDS.getFirst(1) ? lFDS.getFirst(1) : lFDS.cursor(); lSalesTable; lSalesTable = lFDS.getNext())
+{
+  // do something with table buffer
+}
